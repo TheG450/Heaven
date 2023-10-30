@@ -79,7 +79,7 @@ spawn(function()
                 if v.Name == "Box" and v:FindFirstChild("Base") and v:IsA("Model") then
                     pcall(function() 
                         Plr.HumanoidRootPart.CFrame = v.Base.CFrame * CFrame.new(0,-1.6,0) * CFrame.Angles(3,0,0)
-                        wait()
+                        wait(1)
                         fireclickdetector(v.Base.ClickDetector)
                     end)
                 end
